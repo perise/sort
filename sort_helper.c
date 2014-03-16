@@ -13,15 +13,16 @@ increase_sort_answer_check(int *a, int size)
 	return true;
 }
 
-void
+int
 exchange(int *p, int *q)
 {
 	int		temp = *p;
 	*p = *q;
 	*q = temp;
+	return 0;
 }
 
-void
+int 
 test_array_generator(int *array, int size)
 {
 	int		i = 0;
@@ -29,4 +30,5 @@ test_array_generator(int *array, int size)
 	for (i = 0; i < size; i++) {
 		array[i] = rand() % 100;
 	}
+	return 0;
 }
